@@ -1,0 +1,23 @@
+instancename: my-php-service # Used mainly for graylog
+host: ":50051"
+debug: false # Can be switched on\off during runtime
+
+# FPM target configuration
+target:
+    host: localhost
+    port: 9000
+    scriptpath: /home/myuser/app/handlers
+    scriptname: index.php
+    clientip: 127.0.0.1 # Will be used only if we could't get the proper values from headers\incoming connection
+    returnerror: true
+
+# Graylog configuration. Remove - and graylog will be disabled
+graylog:
+  host: graylog.localhost
+  port: 12201
+
+# Remove this two fields if you do not want to use TLS
+keyFile: localhost.key
+crtFile: localhost.pem
+
+  

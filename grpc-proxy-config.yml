@@ -1,0 +1,20 @@
+instancename: svc-auth-dev
+host: ":50051"
+debug: false
+
+target:
+    host: vm-vlad.beget
+    port: 19100
+    scriptpath: /home/beget/app/handlers/external
+    scriptname: index.php
+    clientip: 127.0.0.1
+    returnerror: true
+
+graylog:
+  host: graylog.beget
+  port: 12201
+
+keyFile: localhost.key
+crtFile: localhost.pem
+
+  
