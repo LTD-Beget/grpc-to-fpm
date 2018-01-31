@@ -1,0 +1,7 @@
+*
+!cmd
+!example
+!config
+!internal
+!vendor
+!Gopkg.*

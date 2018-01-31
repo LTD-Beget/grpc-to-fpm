@@ -23,7 +23,6 @@ import (
 
 
 var (
-	gitHash                = "NO_HASH_DEFINED"
 	ErrApplicationShutdown = errors.New("Application is shutting down")
 )
 
@@ -179,7 +178,7 @@ func start() error {
 func main() {
 	logger := getLogger()
 	logrus.SetLevel(logrus.InfoLevel)
-	logger.Info("proxy is starting up ", gitHash)
+	logger.Info("proxy is starting up ")
 	err := start()
 	if err != nil && errors.Cause(err) != ErrApplicationShutdown {
 		logger.WithError(err).Error("application fail")
