@@ -77,8 +77,8 @@ message GetSomeInfoRequest {
 }
 
 message GetSomeInfoResponse {
-    string first_name = 2;
-    string second_name = 3;
+    string first_name = 1;
+    string second_name = 2;
 }
 ```
 
