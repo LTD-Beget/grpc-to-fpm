@@ -13,7 +13,7 @@ type TargetOptions struct {
 	Name        string
 	ScriptPath  string `required:"true"`
 	ScriptName  string `required:"true"`
-	ClientIP    string `required:"true"`
+	ClientIP    string
 	ReturnError bool
 }
 
