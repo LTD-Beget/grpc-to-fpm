@@ -47,3 +47,6 @@ svc-grpc-proxy
 *.pem
 *.csr
 *.key
+
+# Goreleaser artifacts
+dist/

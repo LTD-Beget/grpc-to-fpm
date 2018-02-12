@@ -1,0 +1,8 @@
+# Build customization
+builds:
+  - main: ./cmd/grpc-to-fpm
+    binary: grpc-to-fpm
+    goos:
+      - linux
+    goarch:
+      - amd64
