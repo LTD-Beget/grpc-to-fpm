@@ -34,7 +34,7 @@ type Options struct {
 
 func LoadConfig() (*Options, error) {
 	options := &Options{}
-	err := configor.Load(options, "grpc-proxy-config.yml")
+	err := configor.Load(options, "grpc-to-fpm.yml")
 	if err != nil {
 		return nil, errors.WithMessage(err, "failed to load configuration")
 	}
