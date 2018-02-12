@@ -8,8 +8,8 @@ import (
 )
 
 type TargetOptions struct {
-	Host        string
-	Port        int
+	Host        string `required:"true"`
+	Port        int    `required:"true"`
 	Name        string
 	ScriptPath  string `required:"true"`
 	ScriptName  string `required:"true"`
