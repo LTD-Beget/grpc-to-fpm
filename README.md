@@ -37,23 +37,23 @@ By default, configuration must be stored in "grpc-to-fpm.yml".
 
 Example:
 ```
-instancename: my-php-service              // Service name; Primarily for logs
-host: ":50051"                            // Host for our 'gRPC' server
-debug: false                              // Default debug mode
+instancename: my-php-service              # Service name; Primarily for logs
+host: ":50051"                            # Host for our 'gRPC' server
+debug: false                              # Default debug mode
 
 target:
-    host: localhost                       // PHP-FPM address
-    port: 9000                            // PHP-FPM port
-    scriptpath: /home/myuser/app/handlers // Path of PHP script
-    scriptname: index.php                 // Name of PHP script
-    returnerror: true                     // Enable passing of PHP errors to the gRPC request issuer
+    host: localhost                       # PHP-FPM address
+    port: 9000                            # PHP-FPM port
+    scriptpath: /home/myuser/app/handlers # Path of PHP script
+    scriptname: index.php                 # Name of PHP script
+    returnerror: true                     # Enable passing of PHP errors to the gRPC request issuer
 
-// Optional. Graylog configuration
+# Optional. Graylog configuration
 graylog:
   host: graylog.localhost
   port: 12201
 
-// Optional. Key and certificate if you want to use TLS
+# Optional. Key and certificate if you want to use TLS
 keyFile: localhost.key
 crtFile: localhost.pem
 ```
